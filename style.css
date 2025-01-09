@@ -2,11 +2,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+
+}
+
+header {
+    height: 20vh;
+    background-color: lightblue;
+
+}
+
+main {
+    min-height: 70vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #fffff0;
+
+}
+
+footer {
+    height: 10vh;
+    background-color: lightblue;
 
 }
 
@@ -28,4 +45,29 @@ body {
 
 #gallery-container img:hover {
     transform: scale(1.1);
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#lightbox.visible {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.lightbox-content img {
+    border-radius: 5px;
 }
