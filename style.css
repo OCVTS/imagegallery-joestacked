@@ -68,14 +68,14 @@ footer {
 
 }
 
+.lightbox-content img {
+    border-radius: 5px;
+}
+
 .lightbox-content {
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.lightbox-content img {
-    border-radius: 5px;
 }
 
 .lightbox-content button {
@@ -87,4 +87,22 @@ footer {
     cursor: pointer;
     padding: 0.5rem;
     margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+    #gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    #gallery-container img {
+        max-width: 100%;
+        height: auto;
+    }
 }
