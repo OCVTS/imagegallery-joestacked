@@ -68,6 +68,23 @@ footer {
 
 }
 
+.lightbox-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .lightbox-content img {
     border-radius: 5px;
+}
+
+.lightbox-content button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
 }
