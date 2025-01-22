@@ -45,6 +45,7 @@ footer {
     filter: grayscale(50%) contrast(80%) brightness(0.9);
 }
 
+/* Test */
 #gallery-container img:hover {
     transform: scale(1.1);
     filter: none;
