@@ -51,7 +51,7 @@ footer {
 }
 
 #gallery-container img:hover {
-    transform: scale(1.1);
+    transform: scale(1.088);
     filter: none;
 }
 
@@ -63,6 +63,7 @@ footer {
 
 #gallery-container figcaption {
     margin-top: 5px;
+    font-family: 'Bodoni XT', Times, serif;
     font-size: 0.9rem;
     color: #555;
     font-style: italic;
